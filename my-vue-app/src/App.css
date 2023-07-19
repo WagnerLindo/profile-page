@@ -1,0 +1,11 @@
+@import url("./main.css");
+
+#root {
+  width: 100%;
+  padding: 0px 20px;
+  text-align: center;
+  color: var(--white);
+  background: var(--black-800);
+  overflow: hidden;
+  position: relative;
+}

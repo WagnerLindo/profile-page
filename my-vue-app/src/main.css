@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /*  white */
+  --white: #fff;
+  --white-100: #dfe3fa;
+  --white-200: #f9fafe;
+
+  /*  purple */
+  --purple-100: #423a60;
+  --purple-200: #9277ff;
+  --purple-300: #01137d;
+  --purple-400: #7c5dfa;
+
+  /* red */
+
+  --red-100: #ec5757;
+  --red-200: #ff9797;
+  --red-300: #f15c52;
+
+  /* green - orange */
+
+  --green-100: #4ee1a0;
+  --green-200: #44fe9d;
+  --green-300: #5a7f14;
+  --orange-100: #ff8f00;
+
+  /*  grey */
+  --grey: #f2f2f2;
+  --grey-100: #d9d9d9;
+  --grey-200: #dfe3fa;
+  --grey-300: #888eb0;
+  --grey-400: #7e88c3;
+  --grey-500: #858bb2;
+
+  /*  black */
+  --black: #000000;
+  --black-100: #373b53;
+  --black-200: #1e2139;
+  --black-300: #252945;
+  --black-400: #141625;
+  --black-500: #0c0e16;
+  --black-600: #1e2139;
+  --black-700: #141625;
+  --black-800: #151515;
+  --black-900: #0c0e16;
+
+  /* font */
+  --font-h1: 700 5.5rem/5.5rem "Space Grotesk", sans-serif;
+  --font-h2: 600 3rem/3.5rem "Space Grotesk", sans-serif;
+  --font-body1: 500 1.5rem/2rem "Space Grotesk", sans-serif;
+  --font-body2: 400 1.125rem/1.75rem "Space Grotesk", sans-serif;
+}
+
+.text-h1 {
+  font: var(--font-h1);
+  letter-spacing: -2.5px;
+}
+
+.text-h2 {
+  font: var(--font-h2);
+  letter-spacing: -1.5px;
+}
+.body-1 {
+  font: var(--font-body1);
+}
+.body-normal {
+  font: var(--font-body2);
+}
+
+.flex-column-justy {
+  @apply flex flex-col items-center justify-around;
+}
+.flex-center {
+  @apply flex justify-center items-center;
+}
+.name-link {
+  color: var(--purple-400);
+  text-decoration: underline var(--green-200);
+}
+.name-link:hover {
+  color: var(--grey-300);
+  text-decoration: underline var(--red-300);
+}
+.bton-contact {
+  padding-block: 15px;
+  border-bottom: 5px solid var(--green-300);
+}
+.bton-contact:hover {
+  color: var(--red-100);
+}
+
+.iconscale:hover {
+  transform: scale(1.5);
+}
+
+.imgscale:hover {
+  transform: scale(0.97);
+}
+.position-middle {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.height-profile {
+  height: 500px;
+}
+.height-profile-lg {
+  height: 600px;
+}
+
+@media (min-width: 768px) {
+  .flex-column-justy {
+    @apply flex flex-row justify-between;
+  }
+}
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
