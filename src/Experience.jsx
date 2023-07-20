@@ -27,3 +27,19 @@ const Experience = () => {
 };
 
 export default Experience;
+
+//   techs?.map((tech) => (
+//     <p className="body-1" key={tech}>
+//       {tech}
+//     </p>
+//   ));
+// }
+// {
+//   period?.map((time) => (
+//     <p className="body-normal" key={time}>
+//       {time}
+//     </p>
+//   ));
+// }
+
+// <ExperienCard techs={["HTML"]} period={["asd"]} />;

@@ -7,7 +7,7 @@ import facebookLogo from "/icons/facebook-icon.svg";
 const SocialsMedias = () => {
   return (
     <>
-      <div className="flex-column-justy gap-4 py-8 mx-auto md:px-2">
+      <div className="flex-column-justy gap-4 py-8 px-1 mx-auto">
         <div>
           <p className="body-1">Wagner Lindo</p>
         </div>

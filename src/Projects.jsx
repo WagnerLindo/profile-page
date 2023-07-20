@@ -1,12 +1,10 @@
 import "./App.css";
 import { BtonContact } from "./Header";
-import abcImg from "../public/images/cubeCard.png";
-// import abcImg from "./public/images/cubeCard.png";
 
 function ProjectCard({ img, description, projectLink, githubLink, techStack }) {
   return (
     <div className="group relative">
-      <div className="hidden absolute flex-center w-full h-full lg:hover:bg-[var(--black-500)] opacity-70 ">
+      <div className="hidden absolute flex-center lg:hover:bg-[var(--black-500)] opacity-70 w-full h-full ">
         {/* <MyComponent /> */}
         <div className="hidden lg:group-hover:flex flex-col gap-8">
           <a href={projectLink} target="_blank">
@@ -44,7 +42,7 @@ const Projects = () => {
         </div>
         <div className="text-start flex gap-10 flex-col md:grid grid-cols-2 my-16">
           <ProjectCard
-            img={abcImg}
+            img="/images/cubeCard.png"
             description="CUBE CARD"
             techStack={["HTML", "CSS"]}
             projectLink="https://wagnerlindo.github.io/cube-card/"
