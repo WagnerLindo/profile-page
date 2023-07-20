@@ -8,18 +8,16 @@ import Projects from "./Projects.jsx";
 import Footer from "./Footer";
 import SocialsMedias from "./Socials";
 
+const newLocal =
+  "hidden md:block absolute bottom-0 z-20 w-4/12 h-60 md:w-full h-96 ";
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className="sm:px-16 md:relative px-2 lg:px-24 xl:px-40">
-        <div className="hidden md:block mx-auto absolute right-0 top-0 bg-[var(--black-900)] w-5/12 height-profile lg:height-profile-lg">
-          <img
-            className="hidden md:block absolute bottom-0 z-20 w-40 h-60 md:w-full h-96 "
-            src="./images/profilephoto.png"
-            alt=""
-          />
+      <div className="sm:px-16 md:relative px-2 lg:px-24 xl:px-40 2xl:px-60">
+        <div className="hidden md:block mx-auto absolute right-10 top-0 bg-[var(--black-900)] w-4/12 height-profile xl:w-3/12">
+          <img className={newLocal} src="./images/profilephoto.png" alt="" />
           <img
             src="../public/icons/circle.svg"
             alt=""

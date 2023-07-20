@@ -107,13 +107,25 @@
 .height-profile {
   height: 500px;
 }
-.height-profile-lg {
-  height: 600px;
-}
 
 @media (min-width: 768px) {
   .flex-column-justy {
     @apply flex flex-row justify-between;
+  }
+}
+@media (min-width: 1024px) {
+  .height-profile {
+    height: 600px;
+  }
+}
+@media (min-width: 1202px) {
+  .height-profile {
+    height: 510px;
+  }
+}
+@media (min-width: 1280px) {
+  .height-profile {
+    height: 720px;
   }
 }
 /* @media (prefers-color-scheme: light) {

@@ -10,6 +10,7 @@ function ExperienCard({ languague, time }) {
   );
 }
 
+const newLocal = "absolute -end-1/2 -bottom-12 lg:-bottom-1/4 -end-1/4 ";
 const Experience = () => {
   return (
     <>
@@ -19,11 +20,7 @@ const Experience = () => {
         <ExperienCard languague="Javascript" time="4 Years Ecperience" />
         <ExperienCard languague="Typescript" time="4 Years Ecperience" />
         <ExperienCard languague="React" time="4 Years Ecperience" />
-        <img
-          src="../public/icons/ovals.svg"
-          alt=""
-          className="absolute -end-1/2 -bottom-12 lg:-bottom-1/4 -end-1/4 "
-        />
+        <img src="../public/icons/ovals.svg" alt="" className={newLocal} />
       </div>
     </>
   );
