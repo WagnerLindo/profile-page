@@ -26,7 +26,7 @@ const Header = () => {
           <SocialsMedias />
         </div>
         <img
-          src="../public/icons/ovals.svg"
+          src="/icons/ovals.svg"
           alt=""
           className="absolute z-10 -start-2/4 top-1/4 lg:-start-1/4"
         />
@@ -37,7 +37,7 @@ const Header = () => {
             alt=""
           />
         </div>
-        <img src="../public/icons/circle.svg" alt="" className={newLocal} />
+        <img src="/icons/circle.svg" alt="" className={newLocal} />
         <div className="md:text-start">
           <div className="justify-self-center mb-4">
             <h1 className="text-white body-1 md:text-5xl lg:text-7xl xl:text-8xl">

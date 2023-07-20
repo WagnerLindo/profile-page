@@ -20,7 +20,7 @@ const Experience = () => {
         <ExperienCard languague="Javascript" time="4 Years Ecperience" />
         <ExperienCard languague="Typescript" time="4 Years Ecperience" />
         <ExperienCard languague="React" time="4 Years Ecperience" />
-        <img src="../public/icons/ovals.svg" alt="" className={newLocal} />
+        <img src="/icons/ovals.svg" alt="" className={newLocal} />
       </div>
     </>
   );

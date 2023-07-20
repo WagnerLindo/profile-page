@@ -19,7 +19,7 @@ function App() {
         <div className="hidden md:block mx-auto absolute right-10 top-0 bg-[var(--black-900)] w-4/12 height-profile xl:w-3/12">
           <img className={newLocal} src="./images/profilephoto.png" alt="" />
           <img
-            src="../public/icons/circle.svg"
+            src="/icons/circle.svg"
             alt=""
             className="md:block absolute bottom-0 -left-1/4 z-20"
           />

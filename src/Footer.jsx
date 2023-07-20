@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
           <img
-            src="../public/icons/ovals.svg"
+            src="/icons/ovals.svg"
             alt=""
             className="absolute -left-1/2 bottom-1/4 md:bottom-7"
           />

@@ -1,8 +1,8 @@
 import "./App.css";
-import githubLogo from "../public/icons/github-icon.svg";
-import linkedinLogo from "../public/icons/linkedin-icon.svg";
-import twitterLogo from "../public/icons/twitter-icon.svg";
-import facebookLogo from "../public/icons/facebook-icon.svg";
+import githubLogo from "/icons/github-icon.svg";
+import linkedinLogo from "/icons/linkedin-icon.svg";
+import twitterLogo from "/icons/twitter-icon.svg";
+import facebookLogo from "/icons/facebook-icon.svg";
 
 const SocialsMedias = () => {
   return (
