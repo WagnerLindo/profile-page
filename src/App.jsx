@@ -11,7 +11,7 @@ const newLocal =
 const newLocal_1 = "px-4 sm:px-8 md:relative px-2 lg:px-24 xl:px-40 2xl:px-60";
 const newLocal_2 = "px-4 sm:px-8 md:relative px-2 lg:px-24 xl:px-40 2xl:px-60";
 const newLocal_3 =
-  "hidden md:block mx-auto absolute right-7 top-0 bg-[var(--black-900)] w-4/12 h-full lg:right-24 xl:right-40 w-3/12 2xl:right-60";
+  "hidden md:block mx-auto absolute right-7 top-0 bg-[var(--black-900)] w-4/12 h-full lg:right-24 xl:right-40 w-3/12 2xl:w-3/12 2xl:right-60 ";
 function App() {
   return (
     <>
@@ -25,7 +25,7 @@ function App() {
           <img
             src="/icons/circle.svg"
             alt=""
-            className="md:block absolute bottom-0 -left-1/4 z-20"
+            className="md:block absolute bottom-0 -left-1/4 z-20 xl:left-0"
           />
         </div>
       </div>
