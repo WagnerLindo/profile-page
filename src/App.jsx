@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./Header.jsx";
-import Experience from "./Experience.jsx";
+import Experience from "./experiences";
 import Projects from "./Projects.jsx";
 import Footer from "./Footer";
 import SocialsMedias from "./Socials";

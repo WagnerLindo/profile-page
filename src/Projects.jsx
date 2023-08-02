@@ -4,13 +4,14 @@ import { BtonContact } from "./Header";
 function ProjectCard({ img, description, projectLink, githubLink, techStack }) {
   return (
     <div className="group relative">
-      <div className="hidden absolute flex-center lg:hover:bg-[var(--black-500)] opacity-70 w-full h-full ">
-        {/* <MyComponent /> */}
+      <div className="absolute hidden lg:flex justify-center items-center lg:hover:bg-[var(--black-500)] opacity-70 w-full h-full ">
         <div className="hidden lg:group-hover:flex flex-col gap-8">
           <a href={projectLink} target="_blank">
             <BtonContact text="VIEW PROJECT" />
           </a>
-          <BtonContact text="VIEW CODE" />
+          <a href={githubLink} target="_blank">
+            <BtonContact text="VIEW CODE" />
+          </a>
         </div>
       </div>
       <div className="py-4 flex flex-col gap-4">
@@ -25,7 +26,7 @@ function ProjectCard({ img, description, projectLink, githubLink, techStack }) {
         </div>
         <div className="flex gap-8 lg:hidden">
           <BtonContact href={projectLink} text="VIEW PROJECT" />
-          <BtonContact href={projectLink} text="VIEW CODE" />
+          <BtonContact href={githubLink} text="VIEW CODE" />
         </div>
       </div>
     </div>
@@ -42,18 +43,55 @@ const Projects = () => {
         </div>
         <div className="text-start flex gap-10 flex-col md:grid grid-cols-2 my-16">
           <ProjectCard
-            img="/images/cubeCard.png"
-            description="CUBE CARD"
-            techStack={["HTML", "CSS"]}
-            projectLink="https://wagnerlindo.github.io/cube-card/"
-            githubLink="https://wagnerlindo.github.io/cube-card/"
+            img="/images/flagsPage.png"
+            description="NATIONS EXPLORER WEB"
+            techStack={["HTML", "STYLED COMPONENTS", "REACT"]}
+            projectLink="https://nations-explorer-web-wl.netlify.app/"
+            githubLink="https://github.com/WagnerLindo/flags-project"
+          />
+          <ProjectCard
+            img="/images/videogamesPage.png"
+            description="VIDEOGAMES PAGE"
+            techStack={["HTML", "CSS", "TYPESCRIPT"]}
+            projectLink="https://tl-videogames.netlify.app/"
+            githubLink="https://github.com/WagnerLindo/videogames-app"
+          />
+          <ProjectCard
+            img="/images/invoicePage.png"
+            description="INVOICES APP"
+            techStack={["HTML", "CSS", "JAVASCRIPT"]}
+            projectLink="https://invoices-ui.netlify.app/"
+            githubLink="https://github.com/WagnerLindo/invoices-app"
+          />
+          <ProjectCard
+            img="/images/cakesPage.png"
+            description="CAKES PAGE"
+            techStack={["HTML", "CSS", "JAVASCRIPT"]}
+            projectLink="https://cake-website-wagner.netlify.app/"
+            githubLink="https://github.com/WagnerLindo/cakes-page"
+          />
+
+          <ProjectCard
+            img="/images/pricesCard.png"
+            description="PRICES CARD"
+            techStack={["HTML", "CSS", "JAVASCRIPT"]}
+            projectLink="https://wagnerlindo.github.io/prices-examples/"
+            githubLink="https://github.com/WagnerLindo/prices-examples"
+          />
+
+          <ProjectCard
+            img="/images/creditCard.png"
+            description="CREDIT CARD"
+            techStack={["HTML", "CSS", "JAVASCRIPT"]}
+            projectLink="https://credit-card-wagner.netlify.app/"
+            githubLink="https://github.com/WagnerLindo/creditcard-check"
           />
           <ProjectCard
             img="/images/homePage.png"
             description="HOME PAGE"
             techStack={["HTML", "CSS"]}
             projectLink="https://wagnerlindo.github.io/news-homepage/"
-            githubLink="https://wagnerlindo.github.io/news-homepage/"
+            githubLink="https://github.com/WagnerLindo/news-homepage"
           />
           <ProjectCard
             img="/images/turtleGame.png"
@@ -61,45 +99,21 @@ const Projects = () => {
             techStack={["HTML", "CSS", "JAVASCRIPT"]}
             languagu
             projectLink="https://wagnerlindo.github.io/turtle-game/"
-            githubLink="https://wagnerlindo.github.io/turtle-game/"
+            githubLink="https://github.com/WagnerLindo/turtle-game"
           />
           <ProjectCard
-            img="/images/creditCard.png"
-            description="CREDIT CARD"
-            techStack={["HTML", "CSS", "JAVASCRIPT"]}
-            projectLink="https://credit-card-wagner.netlify.app/"
-            githubLink="https://credit-card-wagner.netlify.app/"
+            img="/images/responsiveCardsPage.png"
+            description="RESPONSIVE CARDS PAGE"
+            techStack={["HTML", "CSS"]}
+            projectLink="https://responsive-cards-wl.netlify.app/"
+            githubLink="https://github.com/WagnerLindo/responsive-cards"
           />
           <ProjectCard
-            img="/images/pricesCard.png"
-            description="PRICES CARD"
-            techStack={["HTML", "CSS", "JAVASCRIPT"]}
-            projectLink="https://wagnerlindo.github.io/prices-examples/"
-            githubLink="https://wagnerlindo.github.io/prices-examples/"
-          />
-
-          <ProjectCard
-            img="/images/cakesPage.png"
-            description="CAKES PAGE"
-            techStack={["HTML", "CSS", "JAVASCRIPT"]}
-            projectLink="https://cake-website-wagner.netlify.app/"
-            githubLink="https://cake-website-wagner.netlify.app/"
-          />
-
-          <ProjectCard
-            img="/images/videogamesPage.png"
-            description="INVOICES APP"
-            techStack={["HTML", "CSS", "JAVASCRIPT"]}
-            projectLink="https://invoices-ui.netlify.app/"
-            githubLink="https://invoices-ui.netlify.app/"
-          />
-
-          <ProjectCard
-            img="/images/videogamesPage.png"
-            description="VIDEOGAMES PAGE"
-            techStack={["HTML", "CSS", "TYPESCRIPT"]}
-            projectLink="https://tl-videogames.netlify.app/"
-            githubLink="https://tl-videogames.netlify.app/"
+            img="/images/cubeCard.png"
+            description="CUBE CARD"
+            techStack={["HTML", "CSS"]}
+            projectLink="https://wagnerlindo.github.io/cube-card/"
+            githubLink="https://github.com/WagnerLindo/cube-card"
           />
         </div>
       </div>

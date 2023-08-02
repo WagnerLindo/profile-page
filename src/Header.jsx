@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import SocialsMedias from "./Socials";
 
@@ -49,8 +48,8 @@ const Header = () => {
               </a>
             </h1>
             <p className="body-normal md:mt-16 xl:text-2xl">
-              Based in the Perú, I’m a front-end developer passionate about
-              building accessible web apps that users love.
+              Based in Perú, I’m a front-end developer passionate about building
+              accessible web apps that users love.
             </p>
           </div>
           <BtonContact text="CONTACT ME" />
