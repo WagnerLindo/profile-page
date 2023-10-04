@@ -4,9 +4,9 @@
 
 :root {
   /*  white */
-  --white: #fff;
-  --white-100: #dfe3fa;
-  --white-200: #f9fafe;
+  --white-100: #fff;
+  --white-200: #dfe3fa;
+  --white-300: #f9fafe;
 
   /*  purple */
   --purple-100: #423a60;
@@ -20,12 +20,18 @@
   --red-200: #ff9797;
   --red-300: #f15c52;
 
-  /* green - orange */
+  /* green  */
 
   --green-100: #4ee1a0;
   --green-200: #44fe9d;
   --green-300: #5a7f14;
-  --orange-100: #ff8f00;
+
+  /* orange */
+  --orange-100: #fff6ee;
+  --orange-200: #ffe7d4;
+  --orange-300: #f5dcc8;
+  --orange-400: #ff8f00;
+  --orange-500: #ff754c;
 
   /*  grey */
   --grey: #f2f2f2;
@@ -34,6 +40,11 @@
   --grey-300: #888eb0;
   --grey-400: #7e88c3;
   --grey-500: #858bb2;
+
+  /*  blue */
+  --blue-100: #e4f1fd;
+  --blue-200: #d5ebff;
+  --blue-300: #76c7ff;
 
   /*  black */
   --black: #000000;
@@ -92,19 +103,17 @@
   color: var(--red-100);
 }
 
-.iconscale:hover {
-  transform: scale(1.5);
-}
-
-.imgscale:hover {
-  transform: scale(0.97);
-}
 .position-middle {
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
 }
-
+.carousel-pagination {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 768px) {
   .flex-column-justy {
     @apply flex flex-row justify-between;

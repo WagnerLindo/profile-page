@@ -1,61 +1,73 @@
 import "./App.css";
-import SocialsMedias from "./Socials";
+import { twMerge } from "tailwind-merge";
 
-export function BtonContact({ text, href, as }) {
-  // const Component = as ?? "button";
-  if (href) {
-    return (
-      <a className="body-1 bton-contact" href={href} target="_blank">
-        {text}
-      </a>
-    );
-  }
-  return <button className="body-1 bton-contact">{text}</button>;
-}
-const newLocal = "absolute -end-20 bottom-1/4 sm:-end-1/8 bottom-0  md:hidden";
-const newLocal_1 = "pb-24 text-center  relative md:flex flex-row-reverse pb-4 ";
-const newLocal_2 =
-  "relative bg-[var(--black-900)] w-40 h-96 flex-column-justy mx-auto md:basis-3/5 bg-transparent";
-// md:pb-0 flex flex-row-reverse
-const Header = () => {
+import { Github, Linkedin, Facebook, Twitter } from "lucide-react";
+
+import githubLogo from "/icons/github-icon.svg";
+import linkedinLogo from "/icons/linkedin-icon.svg";
+import twitterLogo from "/icons/twitter-icon.svg";
+import facebookLogo from "/icons/facebook-icon.svg";
+
+const SocialsLogo = ({ linkPage, logo, hover }) => {
   return (
     <>
-      <div className={newLocal_1}>
-        <div className="absolute position-middle md:hidden">
-          <SocialsMedias />
+      <a href={linkPage} target="_blank">
+        <div
+          className={twMerge(
+            "w-8 h-8 group flex justify-center items-center bg-slate-800 rounded-full hover:scale-125 duration-300",
+            hover
+          )}
+        >
+          {logo}
         </div>
-        <img
-          src="/icons/ovals.svg"
-          alt=""
-          className="absolute z-10 -start-2/4 top-1/4 lg:-start-1/4"
-        />
-        <div className={newLocal_2}>
-          <img
-            className="w-40 h-60 absolute bottom-0 z-20   md:hidden "
-            src="./images/profilephoto.png"
-            alt=""
+      </a>
+    </>
+  );
+};
+
+export function SocialsMedias() {
+  return (
+    <>
+      <div className="flex-column-justy gap-4 py-8 relative">
+        <div>
+          <p className="body-1">Wagner Lindo</p>{" "}
+        </div>
+        <div className="flex gap-3">
+          <SocialsLogo
+            hover="hover:bg-black"
+            linkPage="https://github.com/WagnerLindo"
+            logo={
+              <Github className="w-5 h-5 group-hover:fill-white-100 group-hover:text-white-100" />
+            }
           />
-        </div>
-        <img src="/icons/circle.svg" alt="" className={newLocal} />
-        <div className="md:text-start lg:relative z-10 basis-11/12">
-          <div className="justify-self-center mb-4">
-            <h1 className="text-white body-1 md:text-5xl lg:text-7xl xl:text-8xl">
-              Nice to meet you!
-              <br />
-              I'm{" "}
-              <a className="name-link " href="">
-                Wagner Lindo
-              </a>
-            </h1>
-            <p className="body-normal md:mt-16 xl:text-2xl">
-              Based in Perú, I’m a front-end developer passionate about building
-              accessible web apps that users love.
-            </p>
-          </div>
-          <BtonContact text="CONTACT ME" />
+          <SocialsLogo
+            hover="hover:bg-[#0C64C2]"
+            linkPage="https://www.linkedin.com/in/wemerson-lc/"
+            logo={<Linkedin className="w-5 h-5 group-hover:fill-white-100" />}
+          />
+          <SocialsLogo
+            hover="hover:bg-white-100"
+            linkPage="https://twitter.com/EmersonLCh"
+            logo={
+              <Twitter className="w-5 h-5 group-hover:fill-[#20A1F2] group-hover:text-[#20A1F2]" />
+            }
+          />
+          <SocialsLogo
+            hover="hover:bg-[#395398]"
+            linkPage="https://www.facebook.com/2007emerzon.lc"
+            logo={<Facebook className="w-5 h-5 group-hover:fill-white-100" />}
+          />
         </div>
       </div>
     </>
+  );
+}
+
+const Header = () => {
+  return (
+    <div className="px-12 container mx-auto">
+      <SocialsMedias />
+    </div>
   );
 };
 

@@ -1,24 +1,23 @@
 import "./App.css";
-import SocialsMedias from "./Socials";
-import { BtonContact } from "./Header";
+import { SocialsMedias } from "./Header";
+import BtonContact from "./ButtonContact";
 
 function InputsFields({ text }) {
   return (
     <label>
       <input
         type="text"
-        className="text-white body-1 w-full h-16 bg-[var(--black-300)] pl-8 border-b-4 border-indigo-600"
+        className="text-white-100 body-1 w-full h-16 bg-[var(--black-300)] pl-8 border-b-4 border-indigo-600"
         placeholder={text}
       />
     </label>
   );
 }
-const newLocal =
-  "px-4 pt-20 sm:px-8 md:relative px-2 lg:px-24 xl:px-40 2xl:px-60";
+// px-4 pt-20 sm:px-8 md:relative md:px-2 lg:px-24 xl:px-40 2xl:px-60
 const Footer = () => {
   return (
-    <>
-      <div className={newLocal}>
+    <div className="bg-[var(--black-100)] opacity-80 container mx-auto">
+      <div className="px-6 pt-10">
         <div className="relative md:px-24 lg:flex justify-between border-b-4 border-indigo-600 lg:px-1">
           <div className="lg:p-0 text-start basis-5/12">
             <p className="text-h2 mb-3 lg:mb-20 text-7xl ">Contact</p>
@@ -33,7 +32,7 @@ const Footer = () => {
             <InputsFields text="EMAIL" />
             <label>
               <textarea
-                className="text-white body-1 w-full bg-[var(--black-300)] pl-8 pt-4 border-b-4 border-indigo-600"
+                className="text-white-100 body-1 w-full bg-[var(--black-300)] pl-8 pt-4 border-b-4 border-indigo-600"
                 placeholder="MESSAGE"
                 rows="5"
               ></textarea>
@@ -50,7 +49,7 @@ const Footer = () => {
         </div>
         <SocialsMedias />
       </div>
-    </>
+    </div>
   );
 };
 export default Footer;

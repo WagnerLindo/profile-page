@@ -1,9 +1,11 @@
 @import url("./main.css");
-
+* {
+  box-sizing: border-box;
+}
 #root {
   width: 100%;
   text-align: center;
-  color: var(--white);
+  color: var(--white-100);
   background: var(--black-800);
   overflow: hidden;
   position: relative;
