@@ -55,7 +55,7 @@ const MySelf = () => {
 const ExperienCard = () => {
   return (
     <>
-      <div className="flex justify-center border-2 border-red-300">
+      <div className="flex justify-center flex-wrap">
         {[
           {
             icon: "/icons/react-icon.svg",
@@ -95,8 +95,8 @@ const ExperienCard = () => {
           },
         ].map((slide) => (
           <div key={slide.languague}>
-            <div className="py-4 flex flex-col items-center gap-3 md:w-1/2 lg:w-1/3">
-              <img className="h-20" src={slide.icon} alt="icon" />
+            <div className="py-4 ">
+              <img className="h-20 px-4" src={slide.icon} alt="icon" />
               {/* <span className="body-1">{slide.languague}</span> */}
             </div>
           </div>
@@ -176,9 +176,9 @@ function MyResume() {
           <ProjectCard
             img="/images/iBookShelfPage.png"
             description="IBOOKSHELF"
-            techStack={["TYPESCRIPT", "TAILWIND", "REACT"]}
-            projectLink="https://nations-explorer-web-wl.netlify.app/"
-            githubLink="https://github.com/WagnerLindo/flags-project"
+            techStack={["TYPESCRIPT", "TAILWIND", "REACT", "REDUX"]}
+            projectLink="https://ibookshelf-app.netlify.app/"
+            githubLink="https://github.com/frontendUI-labs/iBookshelf"
           />
           <ProjectCard
             img="/images/flagsPage.png"
