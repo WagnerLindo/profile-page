@@ -97,7 +97,6 @@ const ExperienCard = () => {
           <div key={slide.languague}>
             <div className="py-4 ">
               <img className="h-20 px-4" src={slide.icon} alt="icon" />
-              {/* <span className="body-1">{slide.languague}</span> */}
             </div>
           </div>
         ))}
